@@ -252,3 +252,68 @@
 # foods = ('pizza', 'cheeseburger', 'pie', 'grilled cheese', 'tacos', 'chili')
 
 # print(foods)
+
+#################################### CHECK ON LEARTNING: LISTS
+
+# games = ['titanfall', 'assassins creed', 'fallout', 'battlefield', 'borderlands'] # List#########################
+
+# dimensions = (300, 500)        #Tuple###########################
+
+# # Access list at index
+# print(games[2]) #should print fallout
+# # add to list 
+# games.append('tron')
+# # print(games)
+# # insert into list at index
+# games.insert(4, 'forza')
+# print(games)
+# # remove from list
+# rmGame = games.pop()
+# print(games)
+# # remove from front of list
+# games.remove('fallout')
+# print(games)
+# # delete item
+# # del games[0]
+# # print(games)
+# # use removed item
+# print(f'{rmGame} was removed from list of games')
+# # sort #################permanetly sorts list
+# # games.sort()
+# # print(games)
+# # # reverse sort
+# # games.sort(reverse=True)
+# # print(games)
+# # sorted ######################### creates copy of sorted list
+# print(sorted(games))
+# # reverse sorted
+# print(sorted(games, reverse=True))
+# # range
+# numbers = []
+
+# for value in range(1, 21):
+#     numbers.append(value)
+
+# print(numbers)
+# # min 
+# print(min(numbers))
+# # max 
+# print(max(numbers))
+# # sum
+# print(sum(numbers))
+# # slice
+# print(numbers[3:]) # prints from 3rd index to end of current list
+# print(numbers[-3:]) # prints last 3 indexes no matter how long list gets
+# print(numbers[2:5])
+
+# # copy a list 
+# newGames = games[:] # must use : or index numbers and : # if not new list will only reference old list not create new list
+
+# games.append('grand')
+# print(games)
+
+# newGames.append('wormland')
+# print(newGames)
+
+
+############################################## CHAPTER 5 ################################################
