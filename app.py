@@ -25,6 +25,9 @@
 # print(4*2)
 # print(16/2)
 # print(10-2)
+
+
+####################################################################LISTS####################################################################
 # games = ['borderlands', 'call of duty', 'battlefield']
 
 # print(games[0])
@@ -136,33 +139,116 @@
 # print(places)
 # print(len(places))
 
-cities = ['maryville', 'knoxville', 'rockford', 'alcoa', 'farragut']
+# cities = ['maryville', 'knoxville', 'rockford', 'alcoa', 'farragut']
 
-# Print list at index number
-print(f'I live in {cities[2]}')
-# Append 
-cities.append('townsend')
-print(cities)
-# Insert 
-cities.insert(3, 'friendsville')
-print(cities)
-# Delete
-del cities[1]
-print(cities)
-# Pop 
-cities.pop()
-print(cities)
-# Remove by name
-cities.remove('farragut')
-print(cities)
-# Sort
-print(sorted(cities))
-# Reverse sort
-print(sorted(cities, reverse=True))
-# Sorted
-cities.sort()
-print(cities)
-# Reverse sorted
-cities.sort(reverse=True)
-# Get length
-print(len(cities))
+# # Print list at index number
+# print(f'I live in {cities[2]}')
+# # Append 
+# cities.append('townsend')
+# print(cities)
+# # Insert 
+# cities.insert(3, 'friendsville')
+# print(cities)
+# # Delete
+# del cities[1]
+# print(cities)
+# # Pop 
+# cities.pop()
+# print(cities)
+# # Remove by name
+# cities.remove('farragut')
+# print(cities)
+# # Sort
+# print(sorted(cities))
+# # Reverse sort
+# print(sorted(cities, reverse=True))
+# # Sorted
+# cities.sort()
+# print(cities)
+# # Reverse sorted
+# cities.sort(reverse=True)
+# # Get length
+# print(len(cities))
+
+###################################################WORKING WITH LISTS CH. 4######################################################
+# games = ['tomb raider', 'borderlands', 'titan', 'call of duty', 'forza']
+
+# for game in games:
+#     print(game)
+
+# pizzas = ['pepperoni', 'sausage', 'cheese']
+
+# for pizza in pizzas:
+#     print(f'I like {pizza} pizzas')
+
+# animals = ['cats', 'dogs', 'tigers']
+
+# for animal in animals:
+#     print(f'I think {animal} would make a good pet!')
+
+# for value in range(1, 21):
+#     print(value)
+
+# numbers = []
+
+# for value in range(1, 1000001):
+#     numbers.append(value)
+
+# print(min(numbers))
+# print(max(numbers))
+# print(sum(numbers))
+
+# for value in range(1, 11):
+#     print(value**3)
+
+# cubes = [value**3 for value in range(1,11)]
+# print(cubes)
+
+
+# names = ['Nick', 'juletta', 'skyler', 'amelia', 'apple', 'gipsy']
+
+# # print(names[3:5])
+# ############################## Copying a list
+
+# names.append('joe')
+# names.append('bill')
+# names.append('suzy')
+# # print(names)
+# # print(len(names))
+
+# print(f'This is the first three names {names[:3]}')
+# print(f'This is the middle three names {names[3:6]}')
+# print(f'This is the last three names {names[6:]}')
+
+# pizzas = ['pepperoni', 'sausage', 'cheese']
+
+# friends_pizzas = pizzas[:]
+
+# pizzas.append('salomi')
+# friends_pizzas.append('artichoke')
+
+# for pizza in pizzas:
+#     print(pizza)
+
+# for item in friends_pizzas:
+#     print(item)
+
+############################TUPLES 
+# dimensions = (20,50)
+
+# for dim in dimensions:
+#     print(dim)
+
+# dimensions = (50, 35)
+
+# for dim in dimensions:
+#     print(dim)
+# foods = ('pizza', 'cheeseburger', 'pie', 'grilled cheese', 'tacos')
+
+# # foods.append('toast')############Does not work. Can not assign a new item to tuple
+
+# print(foods)
+
+# foods = ('pizza', 'cheeseburger', 'pie', 'grilled cheese', 'tacos', 'chili')
+
+# print(foods)
