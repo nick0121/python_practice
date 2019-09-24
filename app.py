@@ -317,7 +317,7 @@
 
 
 ############################################## CHAPTER 5: Conditionals ################################################
-names = ['nick', 'juletta', 'skyler', 'amelia']
+# names = ['nick', 'juletta', 'skyler', 'amelia']
 
 # # if names[1] == 'juletta':
 # #     print('that is correct syntax')
@@ -448,5 +448,42 @@ names = ['nick', 'juletta', 'skyler', 'amelia']
 #         print(f'\n{nums}th')
 
 ######################################## CHAPTER 5 CHECK ON LEARNING ###############################
+# names = ['nick', 'juletta', 'skyler', 'amelia']
+
+# favorite_fruits = ['bananas', 'apples', 'pinapples']
+
+# new_favorite_fruits = ['oranges', 'plums', 'apples']
+
+# age = 12
+
+# color = 'Purple'
+
+# print(color == 'purple') # True
+# print(color == 'Purple') # False
+
+# print(color.lower() == 'purple') # True
+
+# for name in names:
+#     if name == 'nick':
+#         print(f'I found {name}')
+#     else:
+#         print(f'{name}, is not nick')
+
+# if 'nick' not in names:
+#     print('this will not print')
+# else: 
+#     print('this will print')
+
+# if 'juletta' in names:
+#     print('this will print')
+# else:
+#     print('this will not print')
+
+# for fruit in favorite_fruits:
+#     if fruit in new_favorite_fruits:
+#         print(f'You already said {fruit}')
+#     else:
+#         print(f'Adding new {fruit}')
+
 
 ######################################## CHAPTER 6: DICTIONARIES ###################################
