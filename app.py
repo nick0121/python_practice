@@ -316,4 +316,137 @@
 # print(newGames)
 
 
-############################################## CHAPTER 5 ################################################
+############################################## CHAPTER 5: Conditionals ################################################
+names = ['nick', 'juletta', 'skyler', 'amelia']
+
+# # if names[1] == 'juletta':
+# #     print('that is correct syntax')
+
+# # num = 18
+
+# # if num < 20 or num > 12: 
+# #     print('this is true')
+# user = 'apple'
+
+# if user not in names:
+#     print(f'{user} not found')
+
+# names.append('apple')
+
+# if user in names:
+#     print(f'{user} was found')
+# car = 'mazda'
+# print(f'Is car = {car}, I predict true')
+# print(car == 'mazda')
+
+# name = 'Shelby'
+
+# # if name not in names:
+# #     print(f'{name} not found')
+# print(name != 'shelby') # Evaluates to true
+# print(name.lower() != 'shelby') # Evaluates to false
+
+# x = 12 
+
+# if x == 12:
+#     print('this is true')
+
+# print(12 < 18 and 13 > 20) # False condition
+
+# for name in names:
+#     if name == 'nick':
+#         print('nick')
+#     else:
+#         print('not nick')
+
+# if 'nick' in names:
+#     print('I found you')
+
+# age = 18 
+
+# # if age < 21:
+# #     message = 'you are too young'
+
+# # print(message)
+# if age < 4:
+#     price = 0
+# elif age <= 18:
+#     price = 25
+# elif age <= 40:
+#     price = 50
+
+# print(f'your cost is {price}')
+# alien_color = 'red'
+
+# if alien_color == 'green':
+#     print('YOu earned 5 points')
+# elif alien_color == 'yellow':
+#     print('you just earned yourself 10 points')
+# else:
+#     print('ypu earned the most points')
+
+# age = 33
+
+# if age <= 2:
+#     print('you are a baby')
+# elif age > 2 and age <= 4:
+#     print('you are a toddler')
+# elif age > 4 and age <= 13:
+#     print('you are a kid')
+# elif age > 13 and age <= 20:
+#     print('you are a teen')
+# elif age > 20 and age <= 65:
+#     print('you are an adult')
+# elif age > 65:
+#     print('you are an elder')
+
+# favorite_fruits = ['bananas', 'apples', 'pinapples']
+
+# if 'apples' in favorite_fruits:
+#     print('You really like apples')
+# if 'bananas' in favorite_fruits:
+#     print('You really like bananas ')
+
+# usernames = ['hjuletta', 'nhartford', 'skylerBear', 'warriorPrincess']
+
+# new_usernames = ['count_dracula', 'drPepper', 'hJuletta', "SKYLERBEAR"]
+
+# lower_usernames = []
+
+# for user in new_usernames:
+#     lower_usernames.append(user.lower())
+
+# for user in usernames:
+#     if user.lower() in lower_usernames:
+#         print('That name is not available')
+#     else:
+#         print(f'{user}, is available')
+
+# usernames.insert(2, 'admin')
+
+# for user in usernames:
+#     if user == 'admin':
+#         print(f'{user}, welcome master')
+#     else:
+#         print(f'{user}, hello slave')
+
+# numbers = []
+
+# for nums in range(1, 10):
+#     numbers.append(nums)
+
+# print(numbers)
+
+# for nums in numbers:
+#     if nums == 1:
+#         print(f'\n{nums}st')
+#     elif nums == 2:
+#         print(f'\n{nums}nd')
+#     elif nums == 3:
+#         print(f'\n{nums}rd')
+#     else:
+#         print(f'\n{nums}th')
+
+######################################## CHAPTER 5 CHECK ON LEARNING ###############################
+
+######################################## CHAPTER 6: DICTIONARIES ###################################
