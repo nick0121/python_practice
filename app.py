@@ -487,3 +487,108 @@
 
 
 ######################################## CHAPTER 6: DICTIONARIES ###################################
+
+# alien_0 = {'color': 'purple', 'points': 0}
+
+# # accessing dictionary
+# print(alien_0['color'])
+# print(alien_0['points'])
+
+# # Adding new key value pairs
+# alien_0['x_position'] = 25
+# alien_0['y_position'] = 50
+
+
+
+# #  Changing valuse of key
+# alien_0['color'] = 'green'
+
+
+# # checking value in conditional
+# alien_0['speed'] = 'medium'
+
+# if alien_0['speed'] == 'slow':
+#     x_increment = 1
+# elif alien_0['speed'] == 'medium':
+#     x_increment = 2
+# else:
+#     x_increment = 3
+
+# alien_0['x_position'] = alien_0['x_position'] + x_increment 
+
+# # Deleting key value pair
+# del alien_0['y_position']
+
+# # Get() Method
+# get_value = alien_0.get('craft', 'this key does not exist') # returns second argument if the key does not exsist
+
+# print(get_value)
+
+# # create a dictionary of a  person I know
+person = {'f_name': 'juletta', 'l_name': 'juletta', 'age': 31, 'city': 'rockford'}
+
+# # person_num = {
+# #     'nick': 13,
+# #     'juletta': 31,
+# #     'skyler': 87,
+# #     'amelia': 45
+# # }
+
+# # Looping through a dictionary
+# for key, value in person.items():
+#     print(key, value)
+
+
+# # Loop through just the keys
+# for name in person.keys():
+#     print(name)
+
+# for name in person:  # Same as above code. getting keys in default keys() method is not nessacary
+#     print(name)
+
+# # checking through list
+
+# if 'erin' not in person.keys():
+#     print('erin is not here')
+
+# # Looping through in order
+# # sorted() method
+# for name in sorted(person.keys()):
+#     print(name)
+
+# # Looping through the values
+# for name in person.values():
+#     print(name)
+
+# # set() method makes sure every value is unique
+# for name in set(person.values()):
+#     print(name)
+
+# create a dictionary containing three major rivers
+rivers = {'tennessee river': 'united states', 'amazon river': 'south america', 'mississippi river': 'united states'}
+
+messages = ['The tennessee river runs through tennessee', 'the amazon river has piranah', 'the mississippi river has run backwards']
+
+
+# for river in rivers:
+#     if river == 'tennessee river':
+#         message = messages[0]
+#     elif river == 'amazon river':
+#         message = messages[1]
+#     else:
+#         message = messages[2]
+
+#     print(message)
+
+# for name in rivers.values():
+#     print(name)
+
+# for name in set(rivers.values()):
+#     print(f'\n{name}')
+
+# for name in sorted(rivers.values()):
+#     print(name)
+
+#################################################### CHAPTER 6 CHECK ON LEARNING ###########################################
+
+#################################################### CHAPTER 7: USER INPUT AND WHILE LOOPS #################################
