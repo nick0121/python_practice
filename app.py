@@ -525,7 +525,7 @@
 # print(get_value)
 
 # # create a dictionary of a  person I know
-person = {'f_name': 'juletta', 'l_name': 'juletta', 'age': 31, 'city': 'rockford'}
+# person = {'f_name': 'juletta', 'l_name': 'juletta', 'age': 31, 'city': 'rockford'}
 
 # # person_num = {
 # #     'nick': 13,
@@ -565,9 +565,9 @@ person = {'f_name': 'juletta', 'l_name': 'juletta', 'age': 31, 'city': 'rockford
 #     print(name)
 
 # create a dictionary containing three major rivers
-rivers = {'tennessee river': 'united states', 'amazon river': 'south america', 'mississippi river': 'united states'}
+# rivers = {'tennessee river': 'united states', 'amazon river': 'south america', 'mississippi river': 'united states'}
 
-messages = ['The tennessee river runs through tennessee', 'the amazon river has piranah', 'the mississippi river has run backwards']
+# messages = ['The tennessee river runs through tennessee', 'the amazon river has piranah', 'the mississippi river has run backwards']
 
 
 # for river in rivers:
@@ -590,5 +590,37 @@ messages = ['The tennessee river runs through tennessee', 'the amazon river has 
 #     print(name)
 
 #################################################### CHAPTER 6 CHECK ON LEARNING ###########################################
+
+# names = {'first': 'nick', 'last': 'hartford'}
+
+# print(names['first'])
+
+# names['first'] = 'brian'
+
+# print(names['first'])
+
+
+# Get 
+# first_name = names.get('first', 'key not found')
+
+# Items 
+# for name in names.items():
+#     print(name)
+# Keys 
+# for name in names.keys():
+#     print(name)
+# Values
+# for name in names.values():
+#     print(name)
+
+# if 'amelia' not in names.values():
+#     print('amelia not forund')
+
+# if 'nick' in names.values():
+#     print('I found nick')
+
+# for name in sorted(names.values()): 
+#     print(name)
+
 
 #################################################### CHAPTER 7: USER INPUT AND WHILE LOOPS #################################
