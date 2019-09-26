@@ -622,5 +622,188 @@
 # for name in sorted(names.values()): 
 #     print(name)
 
+# List of dictionaries
+# alien_0 = {'color': 'purple', 'station': 'earth'}
+# alien_1 = {'color': 'green', 'station': 'mars'}
+# alien_2 = {'color': 'red', 'station': 'venus'}
+# alien_3 = {'color': 'blue', 'station': 'saturn'}
+
+# aliens = [alien_0, alien_1, alien_2, alien_3]
+
+# for alien in aliens:
+#     print(alien)
+
+# make a fleet of 30 aliens
+# aliens = []
+
+# for alien in range(30):
+#     new_alien = {'color': 'purple', 'station': 'earth', 'points': 5}
+#     aliens.append(new_alien)
+
+# for alien in aliens[:3]:
+#     if alien['color'] == 'purple':
+#         alien['color'] = 'gray'
+#         alien['station'] = 'zenon'
+#         alien['points'] = 25
+
+# for alien in aliens[:5]:
+#     print(alien)
+# print('....')
+
+# print(f'total number of aliens : {len(aliens)}')
+
+# List inside a dictionary
+# names = {'first': 'nick', 'suggested': ['tom', 'joe'], 'last': 'hart'}
+
+# # Dictionary inside a dictionary
+# dict_dict = {
+#     'nhart': {'name': 'nick', 'last': 'hart'},
+#     'ahart': {'name': 'amelia', 'last': 'hart'},
+# }
+
+# person_0 = {'name': 'nick', 'age': 33}
+# person_1 = {'name': 'juletta', 'age': 31}
+# person_2 = {'name': 'amelia', 'age': 3}
+
+# people = [person_0, person_1, person_2]
+
+# for person in people:
+#     print(person)
 
 #################################################### CHAPTER 7: USER INPUT AND WHILE LOOPS #################################
+# message = input('please enter your name')
+
+# print(message)
+# message = input('what type of rental car would you like?')
+
+# print(f'I see you selected a {message}')
+
+# message = input('how many people will be joining us')
+
+# if int(message) >= 8:
+#     print('you will have to wait')
+# else:
+#     print('your table is ready')
+
+# message = 'Please guess a number'
+# message += '\nwhats your guess'
+
+# new_message = input(message)
+
+# if int(new_message) % 10 == 0:
+#     print('yes')
+# else:
+#     print('no')
+
+# WHILE LOOPS
+# number = 1
+
+# while number <= 10:
+#     print(number)
+#     number += 1
+
+# message = ''
+
+# while message != 'quit':
+#     message = input('enter quit to end')
+#     print(message)
+
+# using a flag
+# active = True
+# while active:
+#     message = input('enter quit to end')
+
+#     if message == 'quit':
+#         active = False
+#     else:
+#         print(message)
+    
+
+    # Using break to exit the loop
+# while True:
+
+#     message = input('enter quit')
+
+#     if message == 'quit':
+#         break
+#     else:
+#         print(message)
+
+    # Using continue
+# current_num = 0
+# while current_num < 10:
+#     current_num += 1
+#     if current_num % 2 == 0:
+#         continue
+    
+#     print(current_num)
+
+#######################################Try it yourself
+# while True:
+#     prompt = 'enter your toppings'
+#     prompt += '\ntype quit when done'
+
+#     message = input(prompt)
+
+#     if message == 'quit':
+#         break
+#     else: 
+#         print('your selection will be added')
+
+# prompt = 'how old are you'
+# under_3 = 'Woohoo, you are free'
+# under_12 = "you only pay 10 dollars"
+# over_12 = "you pay the full price of 15 dollars"
+
+
+# while True:
+#     message = input(prompt)
+
+#     if message == 'quit':
+#         break
+#     elif int(message) <= 3:
+#         print(under_3)
+#     elif int(message) > 3 and int(message) <= 12:
+#         print(under_12)
+#     else:
+#         print(over_12)
+
+# unconfirmed_users = ['alice', 'nick', 'sam']
+# confirmed_users = []
+
+# while unconfirmed_users:
+#     current_user = unconfirmed_users.pop()
+
+#     print(f'verifying user: {current_user.title()}')
+#     confirmed_users.append(current_user)
+
+# print('the following have been confirmed')
+# for confirmed_user in confirmed_users:
+#     print(confirmed_user.title())
+
+# Deli
+# sandwhich_orders =['tuna', 'blt', 'pbandj', 'pastrami', 'egg', 'pastrami', 'rye', 'pastrami']
+
+# finished_sandwhiches = []
+
+# print('no pastrami for you')
+
+# while 'pastrami' in sandwhich_orders:
+#     sandwhich_orders.remove('pastrami')
+
+# while sandwhich_orders:
+#     current_sandwhich = sandwhich_orders.pop()
+
+#     print(f'Your {current_sandwhich} is being made')
+#     finished_sandwhiches.append(current_sandwhich)
+
+# for sandwhich in finished_sandwhiches:
+#     print(sandwhich)
+
+
+######################################################## CH. 7 CHECK ON LEARNING ##################################################
+
+######################################################## CH. 8: FUNCTIONS #########################################################
+
+
+
