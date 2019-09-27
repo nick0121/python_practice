@@ -803,6 +803,23 @@
 
 ######################################################## CH. 7 CHECK ON LEARNING ##################################################
 
+# num = 0
+
+# while num <= 20:
+#     print(f'\n{num}')
+#     num = num + 1
+
+# names = ['nick', 'juletta', 'skyler', 'amelia', 'apple', 'gypsy']
+# flag = 0
+
+# while 'nick' in names:
+#     print(names[0])
+#     flag += 1
+
+#     if flag >= 3:
+#         names.remove('nick')
+
+
 ######################################################## CH. 8: FUNCTIONS #########################################################
 
 # def hello():
@@ -811,7 +828,8 @@
 # hello()
 
 # Passing information
-def hello(username):
-    print(f'Helo {username}')
+# def hello(username):
+#     print(f'Helo {username}')
 
-hello('nick')
+# hello('nick')
+
