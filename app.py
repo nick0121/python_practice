@@ -805,5 +805,13 @@
 
 ######################################################## CH. 8: FUNCTIONS #########################################################
 
+# def hello():
+#     print('hello world')
 
+# hello()
 
+# Passing information
+def hello(username):
+    print(f'Helo {username}')
+
+hello('nick')
