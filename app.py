@@ -833,3 +833,19 @@
 
 # hello('nick')
 
+# tshirt example from book
+# def make_shirt(message, size='large'):
+#     print(f'I would like size {size}')
+#     print(f'please print "{message}" on the front')
+
+
+
+
+# make_shirt(message='have it your way')
+# make_shirt('i love python', 'small')
+
+def describe_city(city, country='usa'):
+    print(f'{city} is in {country}')
+
+describe_city('knoxville')
+describe_city('paris', 'france')
