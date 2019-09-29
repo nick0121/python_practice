@@ -844,8 +844,60 @@
 # make_shirt(message='have it your way')
 # make_shirt('i love python', 'small')
 
-def describe_city(city, country='usa'):
-    print(f'{city} is in {country}')
+# def describe_city(city, country='usa'):
+#     print(f'{city} is in {country}')
 
-describe_city('knoxville')
-describe_city('paris', 'france')
+# describe_city('knoxville')
+# describe_city('paris', 'france')
+
+# return a value
+# def display_name(name):
+#     return name
+
+# message = display_name('nick')
+
+# print(message)
+
+# def city_country(city, country):
+#     return f'{city},{country}'
+
+# formated_pair = city_country('knoxville', 'tennessee')
+
+# print(formated_pair)
+
+def make_album(artist, title, songs=None):
+
+    if songs:
+        album = {'name': artist, 'title': title, 'num_songs': songs}
+    else:
+        album = {'name': artist, 'title': title}
+
+    return album
+
+# album_1 = make_album('foo fighters', 'hero')
+# album_2 = make_album('billie eilish', 'bad guy')
+# album_3 = make_album('metallica', 'enter sandman', 23)
+
+
+# print(album_1)
+# print(album_2)
+# print(album_3)
+
+while True:
+    name = input('what is the artists name')
+    if name == 'quit':
+        break
+    
+    song = input('which song')
+    if song == 'quit':
+        break
+
+
+    album = make_album(name, song)
+    a_name = album['name']
+    s_name = album['title']
+    print(f'The artists name is: {a_name} \nTheir song is {s_name}')
+
+    
+    
+
