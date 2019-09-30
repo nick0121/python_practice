@@ -1023,13 +1023,15 @@
 ## CREATE TWO FUNCTIONS IN NEW MODULE
 
 ## IMPORT FUNCTIONS 
-
+# from album import make_album
 ## IMPORT MODULE
-
+# import album as a
 ## PASS A LIST TO A FUNCTION
+# names = ['nick', 'juletta', 'skyler', 'amelia']
 
+# a.send_alert(names)
 ## PASS IN A UNKNOWN NUMBER OF PARAMETERS
+# new_album = a.make_album('foo fighters', 'my hero', year=2002, genre='metal')
 
-
-
+# print(new_album)
 #################################################################### CH. 9 CLASSES ######################################################################################
