@@ -1,3 +1,6 @@
+# import pizza                   ##################### Import entire module
+# from pizza import make_record  ##################### Import only function from module
+
 # message = "Hello!"
 
 
@@ -819,60 +822,81 @@
 #     if flag >= 3:
 #         names.remove('nick')
 
-
+###################################################################################################################################
 ######################################################## CH. 8: FUNCTIONS #########################################################
 
+
+
+
+##################################### SIMPLE FUNCTION ##########################
 # def hello():
 #     print('hello world')
 
-# hello()
 
+# hello()  ############ FUNCTION CALL
+
+################################################### PASSING INFORMATION TO A FUNCTION #############################
 # Passing information
 # def hello(username):
 #     print(f'Helo {username}')
 
+
 # hello('nick')
 
-# tshirt example from book
+
+######################################################### DEFAULT PARAMETERS ###################################
+
 # def make_shirt(message, size='large'):
 #     print(f'I would like size {size}')
 #     print(f'please print "{message}" on the front')
 
 
+# make_shirt(message='have it your way')    ######### USING DEFAULT VALUE
+# make_shirt('i love python', 'small')      ######### OVERRIDING DEFAULT VALUE
 
 
-# make_shirt(message='have it your way')
-# make_shirt('i love python', 'small')
 
 # def describe_city(city, country='usa'):
 #     print(f'{city} is in {country}')
 
+
 # describe_city('knoxville')
 # describe_city('paris', 'france')
 
-# return a value
+
+########################################################### FUNCTION THAT RETURNS A VALUE ###############################
+
+
 # def display_name(name):
 #     return name
 
+########### RETURNED VALUE
 # message = display_name('nick')
 
+########### PRINT VARIABLE THAT HOLDS RETURNED VALUE
 # print(message)
+
+
 
 # def city_country(city, country):
 #     return f'{city},{country}'
+
 
 # formated_pair = city_country('knoxville', 'tennessee')
 
 # print(formated_pair)
 
+
+####################################################################### USING None OPTIONAL PARAMETER ##############################################
 # def make_album(artist, title, songs=None):
 
-#     if songs:
+#     if songs:                                                                    ########## CHECK IF NONE
 #         album = {'name': artist, 'title': title, 'num_songs': songs}
 #     else:
 #         album = {'name': artist, 'title': title}
 
 #     return album
+
 
 # # album_1 = make_album('foo fighters', 'hero')
 # # album_2 = make_album('billie eilish', 'bad guy')
@@ -883,6 +907,8 @@
 # # print(album_2)
 # # print(album_3)
 
+
+########################################################################## CALLING FUNCTIONS FROM LOOPS #########################################
 # while True:
 #     name = input('what is the artists name')
 #     if name == 'quit':
@@ -898,6 +924,112 @@
 #     s_name = album['title']
 #     print(f'The artists name is: {a_name} \nTheir song is {s_name}')
 
-    
-    
 
+############################################################################## PASSING A LIST TO A FUNCTION ############################################# 
+############################################################### USE SLICE ':' TO COPY A LIST ############################################################
+
+# messages_to_send = ['nick', 'hello', 'my name is', 'world']
+# sent_messages = []
+
+# def send_messages(messages):
+#     print(messages)
+
+#     while messages_to_send:
+#         current_message = messages.pop()
+#         sent_messages.append(current_message)
+
+# send_messages(messages_to_send)
+
+# print(messages_to_send)
+# print(sorted(sent_messages))
+
+######################################################## FUNCTION WITH ARBITARY NUMBER OF ARGS ##########################################################
+# def make_pizza(*toppings):       ######USE *
+#     # do something...
+
+
+# def make_sandwich(*toppings):
+#     print('you ordered a sandwich')
+#     print(toppings)
+
+
+# make_sandwich('bacon')
+# make_sandwich('lettuce', 'tomato', 'cheese')
+# make_sandwich('peanut butter', 'jelly')
+
+
+############################################################################# KEYWORD ARGS AKA KWARGS #####################################################
+# def create_profile(fname, lname, **user_info):
+#     user_info['first name'] = fname
+#     user_info['last name'] = lname
+#     return user_info
+
+
+# user_profile = create_profile('nick', 'hart', age=33, location='maryville')
+
+# print(user_profile)
+
+
+
+
+# def make_car(manufacturer, model, **kwargs):
+#     kwargs['manufacturer'] = manufacturer
+#     kwargs['model'] = model
+
+#     return kwargs
+
+
+# new_car = make_car('ford', 'f150', color='blue', year='2018')
+
+# print(new_car)
+
+
+
+############################################### STORING FUNCTIONS IN A MODULE NAMED PIZZA#####################################################
+
+# pizza.make_pizza(16, 'pepporoini', 'sausage', 'cheese')
+
+# pizza.make_pizza(12, 'pepperoni', 'cheese')
+
+############################################### IMPORTING SPECIFIC FUNCTION FROM MODULE ####################################################
+# from pizza import make_record   
+
+# print(make_record('foo fighters', 'hero', year=2001, genre='metal'))
+
+# from pizza import make_pizza
+
+# import function you dont need to reference the module name
+# make_pizza(15, 'cheese', 'sausage')
+
+
+
+############################################## USING AN ALIAS WHEN IMPORTING A FUNCTION #####################################################
+# from pizza import make_pizza as mp
+# mp(20, 'sausage')
+
+############################################## You can give a whole module an alias using the "as" syntax ###################################
+# import pizza as p
+# print(p.make_record('biily joel', 'piano man', year=1979))
+
+############################################## Import all functions from a module ###########################################################
+# from pizza import *
+# print(make_record('biily joel', 'piano man', year=1979))
+# make_pizza(15, 'cheese', 'sausage')
+
+
+#################################################################### CH. 8 FUNCTIONS CHECK ON LEARNING ##################################################################
+## CREATE NEW MODULE
+
+## CREATE TWO FUNCTIONS IN NEW MODULE
+
+## IMPORT FUNCTIONS 
+
+## IMPORT MODULE
+
+## PASS A LIST TO A FUNCTION
+
+## PASS IN A UNKNOWN NUMBER OF PARAMETERS
+
+
+
+#################################################################### CH. 9 CLASSES ######################################################################################
