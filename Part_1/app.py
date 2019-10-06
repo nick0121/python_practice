@@ -1039,19 +1039,19 @@
 ############# See dog.py for ch. 9 work
 
 ########################################################### CH. 11 Testing ##############################
-from testing import formated_name
+# from testing import formated_name
 
-print('type q any time to quit')
-while True:
-    first = input('what is your first name')
+# print('type q any time to quit')
+# while True:
+#     first = input('what is your first name')
 
-    if first == 'q':
-        break
+#     if first == 'q':
+#         break
 
-    last = input('what is your last name')
+#     last = input('what is your last name')
 
-    if last == 'q':
-        break
+#     if last == 'q':
+#         break
 
-    formatted_name = formated_name(first, last)
-    print(formatted_name)
+#     formatted_name = formated_name(first, last)
+#     print(formatted_name)
