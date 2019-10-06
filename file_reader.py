@@ -1,4 +1,4 @@
-file_path = 'text_files/digits.txt'   ############## path to txt file
+# file_path = 'text_files/digits.txt'   ############## path to txt file
 
 
 ############################################### OPEN FILE AND PRINT AS OBJECT ALL CONTENTS #############
@@ -136,10 +136,37 @@ file_path = 'text_files/digits.txt'   ############## path to txt file
 #     print(f'I know your favorite number, its {number}')
 
 
+############################################################################# CH. 10 Check on learning ########################################################################
+# filename = 'text_files/names.txt'
+
+# with open(filename) as f:
+#     contents = f.read()
+#     print(contents)
+
+# numbers = ['hello', 'my', 'name', 'is']
+
+# with open(filename, 'a') as f:
+#     for nums in numbers:
+#         f.write('\n' + nums)
+
+
+# import json
+
+# filename = 'username.json'
+
+# try:
+#     with open(filename) as f:
+#         username = json.load(f)
+# except FileNotFoundError:
+#     prompt = input('what is your username')
+#     with open(filename, 'w') as f:
+#         json.dump(prompt, f)
+# else:
+#     print(f'welcome back, {username}')
 
 
 
 
-        
+       
 
 
