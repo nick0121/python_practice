@@ -21,6 +21,11 @@ class AlienInvasion:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_RIGHT:
+                        self.bg_color = (120, 120, 120)
+                    elif event.key == pygame.K_LEFT:
+                        self.bg_color = (20, 30, 200)
             
             self.screen.fill(self.bg_color)
 
