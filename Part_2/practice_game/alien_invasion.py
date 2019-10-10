@@ -28,7 +28,7 @@ class AlienInvasion:
                         self.bg_color = (20, 30, 200)
             
             self.screen.fill(self.bg_color)
-
+            
             pygame.display.flip()
 
 if __name__ == "__main__":
