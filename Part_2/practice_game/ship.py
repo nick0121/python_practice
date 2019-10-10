@@ -8,7 +8,12 @@ class Ship:
         self.settings = ai_game.settings
         self.screen_rect = ai_game.screen.get_rect()
 
-        self.image = pg.image.load('D:\\programming\\Dev\\python\\practice\\Python_sandbox\\python_practice\\ship.bmp')
+        # Home workstation
+        # self.image = pg.image.load('D:\\programming\\Dev\\python\\practice\\Python_sandbox\\python_practice\\ship.bmp')
+
+        # Work workstation
+        self.image = pg.image.load('C:\\Users\\nhartford\\Dev\\practice\\python\\python_book_sandbox\\python_practice\\ship.bmp')
+        
         self.rect = self.image.get_rect()
 
         self.rect.center = self.screen_rect.center
@@ -37,10 +42,10 @@ class Ship:
         if self.moving_left and self.rect.left > 0:
             self.x -= self.settings.ship_speed
 
-        if self.moving_up:
+        if self.moving_up and self.rect.top > self.screen_rect.top:
             self.y -= self.settings.ship_speed
 
-        if self.moving_down:
+        if self.moving_down and self.rect.bottom < self.screen_rect.bottom:
             self.y += self.settings.ship_speed
 
         self.rect.x = self.x
