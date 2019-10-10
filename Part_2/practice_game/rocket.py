@@ -27,6 +27,7 @@ class Rocket:
             
                
             self.screen.fill((230, 230, 230))
+            self.ship.update()
             self.ship.blit_me()
             pg.display.flip()
             
