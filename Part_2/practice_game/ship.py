@@ -9,10 +9,10 @@ class Ship:
         self.screen_rect = ai_game.screen.get_rect()
 
         # Home workstation
-        # self.image = pg.image.load('D:\\programming\\Dev\\python\\practice\\Python_sandbox\\python_practice\\ship.bmp')
+        self.image = pg.image.load('D:\\programming\\Dev\\python\\practice\\Python_sandbox\\python_practice\\ship.bmp')
 
         # Work workstation
-        self.image = pg.image.load('C:\\Users\\nhartford\\Dev\\practice\\python\\python_book_sandbox\\python_practice\\ship.bmp')
+        # self.image = pg.image.load('C:\\Users\\nhartford\\Dev\\practice\\python\\python_book_sandbox\\python_practice\\ship.bmp')
         
         self.rect = self.image.get_rect()
 
