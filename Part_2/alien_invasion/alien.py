@@ -4,6 +4,7 @@ import pygame as pg
 from settings import Settings
 from ship import Ship
 from bullet import Bullet
+from space import Space
 
 class AlienInvasion:
 
@@ -24,6 +25,9 @@ class AlienInvasion:
 
         self.ship = Ship(self)
         self.bullets = pg.sprite.Group()
+        self.aliens = pg.sprite.Group()
+
+        self._create_fleet()
 
 
     def run_game(self):
@@ -77,6 +81,20 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
+    def _create_fleet(self):
+        alien = Space(self)
+        alien_width = alien.rect.width
+
+        available_space_x = self.settings.screen_width - (2 * alien_width)
+        number_aliens_x = available_space_x // (2 * alien_width)
+
+        for alien_number in range(number_aliens_x):
+            print(alien_number)
+            alien = Space(self)
+            alien_x = alien_width + 2 * alien_width * alien_number
+            alien.rect.x = alien.x
+            self.aliens.add(alien)
+
 
     def _update_screen(self):
         # Update images on screen and flip to a new screen
@@ -84,6 +102,8 @@ class AlienInvasion:
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
+
+        self.aliens.draw(self.screen)
         pg.display.flip()
 
 
