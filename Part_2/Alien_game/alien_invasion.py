@@ -4,6 +4,7 @@ import pygame as pg
 from settings import Settings
 from ship import Ship
 from bullet import Bullet
+from alien import Alien
 
 class AlienInvasion:
     # create an alien invasion class
@@ -17,6 +18,9 @@ class AlienInvasion:
 
         self.ship = Ship(self)
         self.bullets = pg.sprite.Group()
+        self.aliens = pg.sprite.Group()
+
+        self._create_fleet()
 
     def run_game(self):
         # Strat the main loop for the game
@@ -54,6 +58,33 @@ class AlienInvasion:
             self.bullets.add(new_bullet)
 
 
+    def _create_fleet(self):
+        #make an alien
+        alien = Alien(self)
+        alien_width, alien_height = alien.rect.size
+        available_space_x = self.settings.screen_width - (2 * alien_width)
+        number_aliens_x = available_space_x // (2 * alien_width)
+
+        # Determine number of rows
+        ship_height = self.ship.rect.height
+        available_spave_y = (self.settings.screen_height - (3 * alien_height) - ship_height)
+        number_rows = available_spave_y // (2 * alien_height)
+
+        # create first row of aliens
+        for row_number in range(number_rows):
+            for alien_number in range(number_aliens_x):
+                self._create_alien(alien_number, row_number)
+
+
+    def _create_alien(self, alien_number, row_number):
+        # create an alien and place it in row
+        alien = Alien(self)
+        alien_width, alien_height = alien.rect.size
+        alien.x = alien_width + 2 * alien_width * alien_number
+        alien.rect.x = alien.x
+        alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
+        self.aliens.add(alien)
+
 
     def _check_keyup_events(self, event):
         if event.key == pg.K_RIGHT:
@@ -76,6 +107,8 @@ class AlienInvasion:
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
+
+        self.aliens.draw(self.screen)
 
         pg.display.flip()
     
