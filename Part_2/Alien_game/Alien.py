@@ -12,7 +12,7 @@ class Alien(Sprite):
         
 
         #load the alien and set its rect attribute
-        self.image = pg.image.load('D:\\programming\\Dev\\python\\practice\\Python_sandbox\\python_practice\\Part_2\\alien_invasion\\img\\alien.bmp')
+        self.image = pg.image.load('D:\\programming\\Dev\\python\\practice\\Python_sandbox\\python_practice\\alien.bmp')
         self.rect = self.image.get_rect()
 
         #start a new alien near the top of the screen 
