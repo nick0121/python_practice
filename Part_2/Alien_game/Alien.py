@@ -7,6 +7,9 @@ class Alien(Sprite):
         super().__init__()
         self.screen = ai_game.screen
         self.settings = ai_game.settings
+        print(ai_game)
+
+        
 
         #load the alien and set its rect attribute
         self.image = pg.image.load('D:\\programming\\Dev\\python\\practice\\Python_sandbox\\python_practice\\Part_2\\alien_invasion\\img\\alien.bmp')
