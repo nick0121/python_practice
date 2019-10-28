@@ -5,6 +5,7 @@ import pygame as pg
 
 from settings import Settings
 from game_stats import GameStats
+from button import Button
 from ship import Ship
 from bullet import Bullet
 from alien import Alien
@@ -28,6 +29,8 @@ class AlienInvasion:
 
         self._create_fleet()
 
+        self.play_button = Button(self, "Play")
+
     def run_game(self):
         # Strat the main loop for the game
         while True:
@@ -45,10 +48,29 @@ class AlienInvasion:
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 sys.exit()
+            elif event.type == pg.MOUSEBUTTONDOWN:
+                mouse_pos = pg.mouse.get_pos()
+                self._check_play_button(mouse_pos)
             elif event.type == pg.KEYDOWN:
                 self._check_keydown_events(event)
             elif event.type == pg.KEYUP:
                 self._check_keyup_events(event)
+
+
+    def _check_play_button(self, mouse_pos):
+        button_clicked = self.play_button.rect.collidepoint(mouse_pos)
+        if button_clicked and not self.stats.game_active:
+            self.stats.reset_stats()
+            self.stats.game_active = True
+
+            self.aliens.empty()
+            self.bullets.empty()
+
+            self._create_fleet()
+            self.ship.center_ship()
+
+            pg.mouse.set_visible(False)
+
 
     def _check_keydown_events(self, event):
         if event.key == pg.K_RIGHT:
@@ -135,6 +157,7 @@ class AlienInvasion:
             sleep(0.5)
         else:
             self.stats.game_active = False
+            pg.mouse.set_visible(True)
             #Display GAME OVER message
 
     def _update_aliens(self):
@@ -175,6 +198,10 @@ class AlienInvasion:
             bullet.draw_bullet()
 
         self.aliens.draw(self.screen)
+
+        if not self.stats.game_active:
+            self.play_button.draw_button()
+
 
         pg.display.flip()
     
